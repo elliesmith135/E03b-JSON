@@ -159,7 +159,7 @@
 		"name": "Forest",
 		"desc": "This is a dimly lit forest, with large trees all around.  One\nparticularly large tree with some low branches stands here.",
 		"exits": [{
-			"exit": "UP",
+			"exit": "DOWN",
 			"target": "TREE"
 		}, {
 			"exit": "NORTH",
@@ -529,7 +529,7 @@
 	},
 	"MGRAT": {
 		"name": "Grating Room",
-		"desc": "",
+		"desc": "If you stay here much longer, you will be eaten by a Grue",
 		"exits": [{
 			"exit": "SW",
 			"target": "MAZ11"
@@ -789,7 +789,8 @@
 			"exit": "EAST",
 			"target": "CRAW1"
 		}],
-		"items": []
+		"items": ["MUMMY"]
+		"desc": "An ancient mummy is sprawled on the floor."
 	},
 	"ICY": {
 		"name": "Glacier Room",
@@ -879,8 +880,8 @@
 		"name": "Mirror Room",
 		"desc": "",
 		"exits": [{
-			"exit": "WEST",
-			"target": "PASS4"
+			"exit": "NORTH",
+			"target": "MIRR1"
 		}, {
 			"exit": "NORTH",
 			"target": "CRAW3"
@@ -1057,7 +1058,7 @@
 	},
 	"BLADD": {
 		"name": "Ladder Bottom",
-		"desc": "This is a rather wide room.  On one side is the bottom of a\nnarrow wooden ladder.  To the northeast and the south are passages\nleaving the room.",
+		"desc": "You have reached a dead end",
 		"exits": [{
 			"exit": "NE",
 			"target": "DEAD7"
@@ -1117,7 +1118,7 @@
 	},
 	"BATS": {
 		"name": "Bat Room",
-		"desc": "",
+		"desc": "This is a cave full of bats. They are currently sleeping",
 		"exits": [{
 			"exit": "EAST",
 			"target": "SQUEE"
@@ -1245,7 +1246,8 @@
 			"exit": "SOUTH",
 			"target": "MINE6"
 		}],
-		"items": []
+		"items": ["SIGN"]
+		"desc": "A sign is here that points down."
 	},
 	"DOME": {
 		"name": "Dome Room",
@@ -1681,7 +1683,7 @@
 	},
 	"FCHMP": {
 		"name": "Moby lossage",
-		"desc": "",
+		"desc": "You are stuck with no way out!",
 		"exits": [],
 		"items": []
 	},
@@ -2063,6 +2065,9 @@
 		}, {
 			"exit": "SOUTH",
 			"target": "GALLE"
+		}, {
+			"exit": "ROB"
+			"target": "BKVAU"
 		}],
 		"items": []
 	},
@@ -2178,7 +2183,7 @@
 		"items": []
 	},
 	"CP": {
-		"name": "Room in a Puzzle",
+		"name": "Just a room (not at all suspicious)",
 		"desc": "",
 		"exits": [{
 			"exit": "NORTH",
@@ -2434,25 +2439,25 @@
 	},
 	"MRDE": {
 		"name": "Narrow Room",
-		"desc": "",
+		"desc": "A sign is here that points down.",
 		"exits": [],
 		"items": []
 	},
 	"MRDW": {
 		"name": "Narrow Room",
-		"desc": "",
+		"desc": "A sign is here that points down.",
 		"exits": [],
 		"items": []
 	},
 	"MRGE": {
 		"name": "Narrow Room",
-		"desc": "",
+		"desc": "A sign is here that points down.",
 		"exits": [],
 		"items": []
 	},
 	"MRGW": {
 		"name": "Narrow Room",
-		"desc": "",
+		"desc": "A sign is here that points down.",
 		"exits": [],
 		"items": []
 	},
@@ -2791,7 +2796,7 @@
 	},
 	"PCELL": {
 		"name": "Prison Cell",
-		"desc": "",
+		"desc": "A sign is here that points down.",
 		"exits": [],
 		"items": []
 	},
